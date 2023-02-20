@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 99vw;
+  height: 97vh;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #2d3248;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #19a2ae;
+  background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: 600px, -300px;
+  background-position-y: 300px, -600px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 375px;
+  border-radius: 15px;
+  -webkit-box-shadow: #2d3248 1px 1px 20px -10px;
+          box-shadow: #2d3248 1px 1px 20px -10px;
+  background-color: white;
+}
+
+section#imagen {
+  background-image: url(images/bg-pattern-card.svg);
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  height: 10em;
+  text-align: center;
+  margin-bottom: 4.5em;
+}
+
+section#imagen img {
+  margin-top: 6.5em;
+  border-radius: 100%;
+  border: solid white 5px;
+}
+
+section#encabezado {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+section#encabezado h1 {
+  font-size: 18px;
+}
+
+section#encabezado span {
+  font-weight: normal;
+  color: #6a6f81;
+}
+
+section#encabezado p {
+  color: #6a6f81;
+}
+
+ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5em 0;
+  border-top: dashed #969696 1px;
+}
+
+ul li {
+  text-align: center;
+  width: 30%;
+}
+
+ul h1 {
+  font-size: 18px;
+}
+
+ul p {
+  font-size: 12px;
+  color: #969696;
+}
+
+footer {
+  position: absolute;
+  top: 94vh;
+  text-align: center;
+  width: inherit;
+  color: darkgreen;
+  font-style: italic;
+}
+
+footer a {
+  color: darkgrey;
+  font-weight: bold;
+  font-style: normal;
+}
+
+footer a:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+}
+/*# sourceMappingURL=estilos.css.map */

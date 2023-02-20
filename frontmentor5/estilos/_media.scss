@@ -1,0 +1,59 @@
+@import "utilidades";
+
+@mixin movil {
+  @media screen and (max-width: rem(750px)) {
+    @content;
+  }
+}
+
+.flex,
+.flex-center {
+  @include movil {
+    display: block;
+    text-align: center;
+  }
+}
+
+.width-all {
+  @include movil {
+    width: 100%;
+  }
+}
+
+.width-col1 {
+  @include movil {
+    width: 100%;
+  }
+}
+
+.width-col2 {
+  @include movil {
+    width: 100%;
+  }
+}
+
+div,
+ul,
+li {
+  @include movil {
+    margin: rem(15px) 0;
+  }
+}
+
+main {
+  @include movil {
+    width: auto;
+    margin: 0 rem(15px);
+  }
+}
+
+body {
+  @include movil {
+    background-image: url(/images/bg-pattern-top-mobile.svg),
+      url(/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position-x: left, right;
+    background-position-y: top, bottom;
+  }
+}

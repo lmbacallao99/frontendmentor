@@ -1,0 +1,15 @@
+footer {
+  text-align: center;
+  color: darkgreen;
+  a {
+    color: darkgrey;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+      color: black;
+      font-weight: normal;
+      text-decoration: none;
+    }
+  }
+}

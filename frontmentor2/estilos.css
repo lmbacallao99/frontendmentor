@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  margin: 15% 10%;
+  width: 80vw;
+  height: 100vh;
+  min-height: 450px;
+  max-height: 500px;
+  font-family: "Inter", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+main {
+  background-color: #1b1938;
+  padding: 6% 9%;
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+}
+
+main h1 {
+  font-size: 2.5em;
+  color: white;
+  margin: 5% 0;
+}
+
+main h1 span {
+  font-weight: 700;
+  color: #aa5cdb;
+}
+
+main p {
+  margin: 10% 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+section#imagen {
+  width: 50%;
+  border-radius: 0 10px 10px 0;
+  background-color: #aa5cdb;
+  background-image: url(images/image-header-desktop.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+section#cuerpo {
+  margin: 10% 0px;
+}
+
+section#cuerpo p {
+  display: inline-block;
+  width: 30%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+section#cuerpo p span {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: none;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: #090b1a;
+    margin: 10% 10%;
+    height: 120vmax;
+    min-height: initial;
+    max-height: initial;
+    font-family: "Inter", sans-serif;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main {
+    background-color: #1b1938;
+    padding: 6% 9%;
+    width: 100%;
+    height: initial;
+    border-radius: 0 0 10px 10px;
+  }
+  main h1 {
+    font-size: 1.7em;
+    color: white;
+    margin: 5% 0;
+  }
+  main h1 span {
+    font-weight: 700;
+    color: #aa5cdb;
+  }
+  main p {
+    margin: 10% 0;
+    color: rgba(255, 255, 255, 0.75);
+  }
+  section#imagen {
+    width: 100%;
+    height: 25vh;
+    border-radius: 10px 10px 0 0;
+    background-color: #aa5cdb;
+    background-image: url(images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+  section#cuerpo p {
+    display: block;
+    width: auto;
+    margin: 15% 0;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  section#cuerpo p span {
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-transform: none;
+    color: white;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,134 @@
+@import "base";
+@import "footer";
+@import "reset";
+@import "utilidades";
+@import "guias";
+@import "media";
+
+div#text {
+  h1 {
+    color: $Very_Dark_Magenta;
+    font-size: rem(52px);
+    line-height: 1;
+    margin-bottom: rem(10px);
+    @include movil {
+      margin-top: rem(70px);
+      font-size: rem(42px);
+    }
+  }
+  P {
+    opacity: 0.5;
+  }
+}
+
+.star {
+  width: rem(125px);
+  height: rem(18px);
+
+  $start: url(/images/icon-star.svg);
+  $fivestart: $start, $start, $start, $start, $start;
+  $start_position: rem(0px), rem(1 * 25px), rem(2 * 25px), rem(3 * 25px),
+    rem(4 * 25px);
+
+  background-image: $fivestart;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: $start_position;
+
+  display: inline-block;
+}
+
+.align-left {
+  justify-self: left;
+  align-self: flex-start;
+}
+.align-center {
+  justify-self: center;
+  align-self: center;
+}
+.align-right {
+  justify-self: right;
+  align-self: flex-end;
+}
+.rosa{
+  color: $Soft_Pink;
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+ul#stat {
+  color: $Very_Dark_Magenta;
+
+  li {
+    background-color: $Light_Grayish_Magenta;
+    border-radius: rem(10px);
+
+    @extend .flex-center;
+    justify-content: start;
+    flex-wrap: nowrap;
+
+    width: 80%;
+    min-height: 25%;
+    margin: rem(10px) rem(0px);
+    padding: 0 rem(15px);
+
+    & > * {
+      margin: rem(10px) rem(15px);
+      @include movil {
+        margin: auto;
+      }
+    }
+  }
+  @include movil {
+    width: 100%;
+    li {
+      display: block;
+      width: auto;
+    }
+  }
+}
+
+ul#person {
+  color: $Light_Grayish_Magenta;
+
+  align-content: space-between;
+  justify-content: space-between;
+  min-height: vh(40vh);
+  li {
+    border-radius: rem(10px);
+    background-color: $Very_Dark_Magenta;
+    padding: rem(40px) rem(30px);
+
+    width: 32%;
+    height: max-content;
+
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+    grid-template-columns: rem(80px) auto auto;
+    img {
+      border-radius: 100%;
+      grid-row-start: 1;
+      grid-row-end: span 2;
+
+      max-height: rem(50px);
+    }
+    h3 {
+      grid-column-start: 2;
+      grid-column-end: span 2;
+      font-weight: normal;
+      opacity: 0.9;
+    }
+    p {
+      grid-row-start: 3;
+      grid-column-start: span 3;
+      margin-top: rem(20px);
+      opacity: 0.7;
+    }
+  }
+  @include movil {
+    text-align: initial;
+    li {
+      width: 100%;
+    }
+  }
+}

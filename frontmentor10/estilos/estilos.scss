@@ -1,0 +1,110 @@
+@import "reset";
+@import "util";
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap");
+
+// Primarios:
+$Soft_blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+// Secundarios:
+$Very_dark_blue_main_BG: hsl(217, 54%, 11%);
+$Very_dark_blue_card: hsl(216, 50%, 16%);
+$Very_dark_blue_line: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+// Tipografia:
+$pSize: rem(18px);
+
+body {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Outfit", sans-serif;
+    color: $Soft_blue;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    color: $White;
+    &:hover {
+      color: $Cyan;
+      cursor: pointer;
+    }
+  }
+  p {
+    font-size: $pSize;
+  }
+  span#Autor {
+    color: $White;
+    &:hover {
+      color: $Cyan;
+      cursor: pointer;
+    }
+  }
+  background-color: $Very_dark_blue_main_BG;
+
+  @include movil{
+    position: relative;
+  }
+}
+
+div#tarjeta-imagen {
+  div#Imagen.w3-panel,
+  div#Contenedor.w3-container {
+    padding: 0rem rem(28px) !important;
+  }
+  div#Imagen.w3-panel {
+    margin-top: rem(28px) !important;
+  }
+  background-color: $Very_dark_blue_card;
+  div#Avatar {
+    border-top: hsl(215, 32%, 27%) rem(2px) solid;
+  }
+  div#Contenido {
+    font-weight: 300;
+    color: $Very_dark_blue_line;
+  }
+  div#ETH,
+  div#Clock {
+    font-weight: 400;
+  }
+  div#ETH {
+    p {
+      color: $Cyan;
+    }
+  }
+  div#Relleno{
+    background-color: $Cyan !important;
+    opacity: 0.4;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+}
+
+footer {
+  @include movil{
+    position: initial;
+  }
+  text-align: center;
+  color: darkgreen;
+  a {
+    color: darkgrey;
+    font-style: normal;
+    text-decoration: underline;
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}

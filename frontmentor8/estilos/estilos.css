@@ -1,0 +1,268 @@
+/* Box sizing rules */
+@import url(c:\Users\Administrador\Mob Administrator\Projects\Programation Projects\Projects\Web\frontendmentor.io\frontmentor8\estilos\w3.css);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.flex-col {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+@media screen and (max-width: 46.875rem) {
+  .grid {
+    display: initial;
+  }
+}
+
+body {
+  background-color: #674baf;
+  background-image: url(/images/bg-desktop.svg);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 46.875rem) {
+  body {
+    text-align: center;
+    background-image: url(/images/bg-mobile.svg);
+  }
+}
+
+body h2 {
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+@media screen and (min-width: 46.875rem) {
+  body {
+    padding: 2.5%;
+  }
+  body p {
+    font-size: 1.25rem;
+  }
+  body h2 {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+}
+
+section.icon {
+  color: white;
+}
+
+section.icon ion-icon {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 46.875rem) {
+  section.icon {
+    position: relative !important;
+  }
+}
+
+section.icon a:hover {
+  color: #e882e8 !important;
+  border-color: #e882e8 !important;
+  background-color: inherit !important;
+}
+
+section.icon a {
+  padding: 0.375rem 0.625rem;
+}
+
+@media screen and (max-width: 46.875rem) {
+  header {
+    font-size: 1.5rem;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 46.875rem) {
+  header {
+    font-size: 3rem;
+  }
+  header h2 {
+    font-size: 3rem;
+  }
+}
+
+main button.w3-section {
+  font-size: 1.2rem;
+  color: #674baf !important;
+  position: relative;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.3125rem;
+          box-shadow: 0.3125rem 0.3125rem 0.3125rem;
+}
+
+@media screen and (max-width: 46.875rem) {
+  main button.w3-section {
+    width: 60%;
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 46.875rem) {
+  main button.w3-section {
+    width: 30%;
+    height: 3.75rem;
+  }
+}
+
+main button.w3-section:hover {
+  color: white !important;
+  background-color: #e882e8 !important;
+}
+
+main p {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (min-width: 46.875rem) {
+  main section {
+    padding: 3% !important;
+  }
+}
+
+footer {
+  text-align: center;
+  color: darkgreen;
+}
+
+footer a {
+  color: darkgrey;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 46.875rem) {
+  footer {
+    position: relative !important;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

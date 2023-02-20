@@ -1,0 +1,42 @@
+@import "utilidades";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap");
+
+$Very_Dark_Magenta: hsl(300, 43%, 22%);
+$Soft_Pink: hsl(333, 80%, 67%);
+
+$Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+$Light_Grayish_Magenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400, 500, 700;
+
+  background-color: $White;
+  background-image: url(/images/bg-pattern-top-desktop.svg),
+    url(/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position-x: rem(-900px), rem(350px);
+  background-position-y: top, bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+main {
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  max-width: vw(85vw);
+  min-height: vh(75vh);
+}
+
+h3{
+  font-size: rem(15px);
+}

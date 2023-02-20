@@ -1,0 +1,52 @@
+// Vista Desktop
+@import "util";
+
+body {
+}
+
+main {
+  max-width: 90%;
+  margin: rem(70px) rem(0px);
+  section#head {
+    max-width: 45%;
+    margin-bottom: rem(50px);
+    align-self: center;
+  }
+  ul {
+    justify-content: center;
+    align-content: center;
+    li {
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: rem(25px) rem(30px);
+      background-color: white;
+      border-radius: rem(5px);
+      box-shadow: rem(5px) rem(5px) rem(10px) rem(-10px) black;
+      img {
+        align-self: flex-end;
+        margin-top: rem(40px);
+      }
+      
+      max-height: rem(250px);
+      margin: rem(15px) rem(15px);
+      flex-basis: 30%;
+      &:nth-child(1) {
+        position: relative;
+        top: rem(125px);
+      }
+      &:nth-child(2) {
+      }
+      &:nth-child(3) {
+        position: relative;
+        top: rem(125px);
+      }
+      &:nth-child(4) {
+      }
+    }
+  }
+}
+
+footer {
+  flex-basis: 100%;
+  align-self: flex-end;
+}

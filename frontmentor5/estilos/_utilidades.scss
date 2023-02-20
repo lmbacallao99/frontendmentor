@@ -1,0 +1,42 @@
+@function rem($size) {
+    @return $size *  1rem/16px;
+}
+
+@function vw($size) {
+    @return 1366px/100 * $size/1vw * 1rem/16px;
+}
+
+@function vh($size) {
+    @return 766px/100 * $size/1vh  * 1rem/16px;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    flex-direction: column;
+}
+
+.flex-col {
+    flex-direction: row;
+}
+
+.width-all{
+    width: 100%;
+}
+
+.width-col1{
+    width: 55%;
+}
+
+.width-col2{
+    width: 35%;
+}

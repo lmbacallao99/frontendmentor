@@ -1,0 +1,49 @@
+@import "reset";
+@import "util";
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+$White: hsl(0, 0%, 100%);
+$Light_gray: hsl(212, 45%, 89%);
+$Grayish_blue: hsl(220, 15%, 55%);
+$Dark_blue: hsl(218, 44%, 22%);
+
+body {
+  h2,
+  p {
+    font-family: "Outfit", sans-serif;
+  }
+  h2 {
+    color: $Dark_blue;
+    font-size: rem(24px);
+    font-weight: 700;
+  }
+  p {
+    color: $Grayish_blue;
+    font-size: rem(15px);
+    font-weight: 400;
+  }
+  @include movil{
+    position: initial !important;
+  }
+}
+
+div.w3-card{
+  @include movil{
+    width: 90vw !important;
+  }
+}
+
+footer {
+  text-align: center;
+  color: darkgreen;
+  a {
+    color: darkgrey;
+    font-style: normal;
+    text-decoration: underline;
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}

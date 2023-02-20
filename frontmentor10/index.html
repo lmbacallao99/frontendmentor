@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link rel="stylesheet" href="estilos/w3.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="w3-center">
+    <div
+      id="tarjeta-imagen"
+      class="w3-card-4 w3-display-middle w3-round-xlarge"
+      style="width: 25rem"
+    >
+      <div class="w3-clear w3-panel w3-display-container" id="Imagen">
+        <img
+          src="images/image-equilibrium.jpg"
+          alt="image-avatar"
+          class="w3-round-xlarge"
+        />
+        <div id="Relleno" class="w3-display-middle w3-display-hover w3-round-xlarge">
+          <div  class="w3-round-xlarge" style="width: 322.5px; height: 322.5px;"></div>
+        </div>
+        <div id="Ojo" class="w3-display-middle w3-display-hover"><img src="images/icon-view.svg" alt="ojo" /></div>
+
+      </div>
+
+      <div id="Contenedor" class="w3-container w3-center">
+        <div id="Titulo" style="text-align: start">
+          <h2>Equilibrium #3429</h2>
+        </div>
+        <div id="Contenido" style="text-align: start">
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+        </div>
+        <div class="w3-row">
+          <div id="ETH" class="w3-col l8 m8 s8 w3-padding-16">
+            <div class="w3-cell w3-container" style="padding: 0 0 0 0">
+              <img
+                src="images/icon-ethereum.svg"
+                alt="icon-clock"
+                style="width: 1rem; height: 1.5rem"
+              />
+            </div>
+            <div class="w3-cell w3-container" style="padding: 0 0 0 0.5rem">
+              <p>0.041 ETH</p>
+            </div>
+          </div>
+          <div id="Clock" class="w3-stretch w3-col l4 m4 s4 w3-padding-16">
+            <div class="w3-cell w3-container" style="padding: 0 0 0 0">
+              <img
+                src="images/icon-clock.svg"
+                alt="icon-clock"
+                style="width: 1.5rem; height: 1.5rem"
+              />
+            </div>
+            <div class="w3-cell w3-container" style="padding: 0 0 0 0.5rem">
+              <p>3 days left</p>
+            </div>
+          </div>
+        </div>
+        <div id="Avatar" class="w3-padding-24">
+          <div class="w3-cell w3-container" style="padding: 0 0 0 0">
+            <img
+              src="images/image-avatar.png"
+              alt="image-avatar"
+              style="width: 2.5rem"
+            />
+          </div>
+          <div class="w3-cell w3-container">
+            <p style="padding-top: 0.5rem">
+              Creation of <span id="Autor">Jules Wyvern</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="w3-container w3-mobile w3-margin-top w3-display-bottommiddle w3-hide"
+    >
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/anavarro99dev" target="_blank"
+          >anavarro99dev</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>

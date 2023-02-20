@@ -1,0 +1,119 @@
+@import "reset";
+@import "util";
+@import "w3.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+$Violet: hsl(257, 40%, 49%);
+$Soft_Magenta: hsl(300, 69%, 71%);
+$TyBody: "Poppins", sans-serif;
+$TyHead: "Open Sans", sans-serif;
+$TyTNR: "Times New Roman", Times, serif;
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  @include movil {
+    text-align: center;
+    background-image: url(/images/bg-mobile.svg);
+  }
+  background-image: url(/images/bg-desktop.svg);
+  color: white;
+  font-family: $TyHead;
+  h2 {
+    font-weight: 600;
+    line-height: rem(28px);
+  }
+
+  @include desktop {
+    p {
+      font-size: rem(20px);
+    }
+    padding: 2.5%;
+    h2 {
+      font-size: 3.5rem;
+      line-height: rem(48px);
+    }
+  }
+}
+
+section.icon {
+  color: white;
+  ion-icon {
+    font-size: 1rem;
+  }
+  @include movil {
+    position: relative !important;
+  }
+  a:hover {
+    color: $Soft_Magenta !important;
+    border-color: $Soft_Magenta !important;
+    background-color: inherit !important;
+  }
+  a {
+    padding: rem(6px) rem(10px);
+  }
+}
+
+header {
+  @include movil {
+    h2 {
+      font-size: 1.5rem;
+    }
+    font-size: 1.5rem;
+  }
+  @include desktop {
+    h2 {
+      font-size: 3rem;
+    }
+    font-size: 3rem;
+  }
+}
+
+main {
+  button.w3-section {
+    font-size: 1.2rem;
+    color: $Violet !important;
+    position: relative;
+    box-shadow: rem(5px) rem(5px) rem(5px);
+    @include movil {
+      width: 60%;
+      left: 20%;
+    }
+    @include desktop {
+      width: 30%;
+      height: rem(60px);
+    }
+    &:hover {
+      color: white !important;
+      background-color: $Soft_Magenta !important;
+    }
+  }
+  p {
+    font-family: $TyHead;
+  }
+
+  section {
+    @include desktop {
+      padding: 3% !important;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  color: darkgreen;
+  a {
+    color: darkgrey;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+      color: black;
+      font-weight: normal;
+      text-decoration: none;
+    }
+  }
+  @include movil {
+    position: relative !important;
+  }
+}

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .attribution {
+  display: none;
+}
+
+div#card {
+  border-radius: 20px;
+  width: 375px;
+  height: 600px;
+  background-color: #f5f7ff;
+  -webkit-box-shadow: 10px 10px 40px darkgrey;
+          box-shadow: 10px 10px 40px darkgrey;
+  color: darkgrey;
+  margin: 10% 0px;
+}
+
+div#card img#encabezado {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+div#card div#texto {
+  margin: 0px 30px;
+  text-align: center;
+}
+
+div#card div#texto h2 {
+  color: initial;
+}
+
+div#card div#plan {
+  margin: 30px 30px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: rgba(224, 232, 255, 0.308);
+}
+
+div#card div#plan img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div#card div#plan p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div#card div#plan p span {
+  font-weight: bold;
+  color: initial;
+}
+
+div#card div#plan a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 35%;
+  font-weight: bold;
+  font-size: 12px;
+  color: #3829e0;
+}
+
+div#card div#plan a:hover {
+  color: rgba(56, 41, 224, 0.733);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+div#card div#boton {
+  margin: 40px 20px;
+}
+
+div#card div#boton button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  font-weight: 800;
+}
+
+div#card div#boton button#proceder {
+  border-radius: 10px;
+  background-color: #3829e0;
+  color: white;
+  -webkit-box-shadow: 10px 20px 25px darkgrey;
+          box-shadow: 10px 20px 25px darkgrey;
+}
+
+div#card div#boton button#cancel {
+  color: darkgrey;
+  background-color: inherit;
+  margin-top: 10px;
+}
+
+div#card div#boton button#proceder:hover {
+  cursor: pointer;
+  background-color: rgba(56, 41, 224, 0.733);
+}
+
+div#card div#boton button#cancel:hover {
+  cursor: url(images/favicon-32x32.png);
+  color: initial;
+}
+/*# sourceMappingURL=estilo.css.map */

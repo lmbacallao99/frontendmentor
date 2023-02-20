@@ -1,0 +1,187 @@
+// ==========================================================================================================
+// ==========================================================================================================
+// Variables
+//
+// ==========================================================================================================
+// ==========================================================================================================
+// Layaouts:
+//
+// ==========================================================================================================
+$mobile: 375px;
+$desktop: 1440px;
+// ==========================================================================================================
+// Colores
+//
+// ==========================================================================================================
+// Primarios
+$main_background: hsl(233, 47%, 7%);
+$card_background: hsl(244, 38%, 16%);
+$accent: hsl(277, 64%, 61%);
+// Neutrales
+$main_heading: hsl(0, 0%, 100%);
+$main_paragraph: hsla(0, 0%, 100%, 0.75);
+$stat_headings: hsla(0, 0%, 100%, 0.6);
+// ==========================================================================================================
+// Typography
+//
+// ==========================================================================================================
+// Body
+$font_size: 15px;
+// Font
+$font_family1: 'Inter', sans-serif;;
+$font_family2: 'Red Hat Display', sans-serif;
+$font_url: 'https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap';
+$font_weights: 700;
+// ==========================================================================================================
+// ==========================================================================================================
+// Estilos 1440x-900
+//
+// ==========================================================================================================
+// ==========================================================================================================
+@import url($font_url);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $main_background;
+
+    margin: 15% 10%;
+    width: 80vw;
+    height: 100vh;
+    min-height: 450px;
+    max-height: 500px;
+
+    font-family: $font_family1;
+    font-family: $font_family2;
+    font-size: $font_size;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main {
+    background-color: $card_background;
+
+    padding: 6% 9%;
+    width: 50%;
+    h1 {
+        font-size: 2.5em;
+        color: $main_heading;
+        span {
+            font-weight: $font_weights;
+            color: $accent;
+        }
+        margin: 5% 0;
+    }
+    p {
+        margin: 10% 0;
+        color: $main_paragraph;
+    }
+    border-radius: 10px 0 0 10px;
+}
+
+section#imagen {
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+    background-color: $accent;
+    background-image: url(images/image-header-desktop.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+section#cuerpo {
+    margin: 10% 0px;
+    p {
+        display: inline-block;
+        width: 30%;
+
+        text-transform: uppercase;
+        color: $stat_headings;
+
+        span {
+            font-weight: $font_weights;
+            font-size: 2rem;
+            text-transform: none;
+            color: $main_heading;
+        }
+    }
+}
+// ==========================================================================================================
+// ==========================================================================================================
+// Estilos 375x900
+//
+// ==========================================================================================================
+// ==========================================================================================================
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: $main_background;
+
+        margin: 10% 10%;
+        height: 120vmax;
+        min-height: initial;
+        max-height: initial;
+
+        font-family: $font_family1;
+        font-family: $font_family2;
+        font-size: $font_size;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        background-color: $card_background;
+
+        padding: 6% 9%;
+        width: 100%;
+        height: initial;
+        h1 {
+            font-size: 1.7em;
+            color: $main_heading;
+            span {
+                font-weight: $font_weights;
+                color: $accent;
+            }
+            margin: 5% 0;
+        }
+        p {
+            margin: 10% 0;
+            color: $main_paragraph;
+        }
+        border-radius: 0 0 10px 10px;
+    }
+
+    section#imagen {
+        width: 100%;
+        height: 25vh;
+        border-radius: 10px 10px 0 0;
+        background-color: $accent;
+        background-image: url(images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    section#cuerpo {
+        p {
+            display: block;
+            width: auto;
+            margin: 15% 0;
+
+            text-transform: uppercase;
+            color: $stat_headings;
+
+            span {
+                font-weight: $font_weights;
+                font-size: 1.7rem;
+                text-transform: none;
+                color: $main_heading;
+            }
+        }
+    }
+}
+// ==========================================================================================================
+// ==========================================================================================================

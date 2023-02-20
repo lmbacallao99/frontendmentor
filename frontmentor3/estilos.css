@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 97vh;
+  width: 99vw;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70vw;
+  position: absolute;
+  top: 12vh;
+  left: 15vw;
+  border-radius: 10px;
+}
+
+li {
+  padding: 3.6em;
+}
+
+li img {
+  margin-bottom: 1.2em;
+}
+
+li h1 {
+  margin-bottom: 1.2em;
+  text-transform: uppercase;
+}
+
+li p {
+  margin-bottom: 3.5em;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7em;
+}
+
+li button {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  width: 70%;
+  height: 3.5em;
+  border-radius: 30px;
+  border-color: #f2f2f2;
+  border-style: solid;
+  background-color: #f2f2f2;
+}
+
+li button:hover {
+  background-color: inherit;
+}
+
+#card1 {
+  background-color: #e38826;
+  border-radius: 10px 0 0 10px;
+}
+
+#card1 button {
+  color: #e38826;
+}
+
+#card1 button:hover {
+  color: #f2f2f2;
+}
+
+#card2 {
+  background-color: #006970;
+}
+
+#card2 button {
+  color: #006970;
+}
+
+#card2 button:hover {
+  color: #f2f2f2;
+}
+
+#card3 {
+  background-color: #004241;
+  border-radius: 0 10px 10px 0;
+}
+
+#card3 button {
+  color: #004241;
+}
+
+#card3 button:hover {
+  color: #f2f2f2;
+}
+
+footer {
+  width: 100vw;
+  position: relative;
+  top: 90vh;
+  text-align: center;
+  color: darkgreen;
+}
+
+footer a {
+  color: grey;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: none;
+  font-weight: normal;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80vw;
+    position: static;
+    margin: 6vh 6vw;
+  }
+  #card1 {
+    border-radius: 10px 10px 0 0;
+  }
+  #card3 {
+    border-radius: 0 0 10px 10px;
+  }
+  footer {
+    width: initial;
+    position: static;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

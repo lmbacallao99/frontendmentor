@@ -1,0 +1,68 @@
+@import "util";
+
+@mixin guia($color, $level) {
+  $opciones: (
+    "1": rem(3px) solid,
+    "2": rem(2px) dashed,
+    "3": rem(1px) solid,
+  );
+  border: $color map-get($opciones, quote($level));
+}
+
+// Cuerpo Basico
+// body {
+//   & > * {
+//     @include guia(green, 1);
+//   }
+//   main {
+//     & > * {
+//       @include guia(blue, 2);
+//     }
+//   }
+// }
+
+// @include movil {
+//   & > * {
+//     @include guia(green, 1);
+//   }
+//   main {
+//     & > * {
+//       @include guia(blue, 2);
+//     }
+//   }
+// }
+
+// Secciones
+// section#card1 {
+//   @include guia(black, 3);
+//   & > * {
+//     @include guia(green, 1);
+//   }
+// }
+// section#card2 {
+//   @include guia(black, 3);
+//   & > * {
+//     @include guia(blue, 1);
+//   }
+//   ul > *{
+//     @include guia(red, 2);
+//   }
+// }
+
+// @include movil {
+//   section#card1 {
+//     @include guia(black, 3);
+//     & > * {
+//       @include guia(green, 1);
+//     }
+//   }
+//   section#card2 {
+//     @include guia(black, 3);
+//     & > * {
+//       @include guia(blue, 1);
+//     }
+//     ul > *{
+//       @include guia(red, 2);
+//     }
+//   }
+// }

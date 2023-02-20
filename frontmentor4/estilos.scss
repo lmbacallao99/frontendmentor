@@ -1,0 +1,122 @@
+$dark_cyan: hsl(185, 75%, 39%);
+$very_dark_desaturated_blue: hsl(229, 23%, 23%);
+$dark_grayish_blue: hsl(227, 10%, 46%);
+$dark_gray: hsl(0, 0%, 59%);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap');
+// font_size(name and stats): 18px;
+// font-family: 'Inter', sans-serif;
+// font-family: 'Red Hat Display', sans-serif;
+// Weights: 400, 700
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 99vw;
+    height: 97vh;
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: $very_dark_desaturated_blue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: $dark_cyan;
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: 600px, -300px;
+    background-position-y: 300px, -600px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 375px;
+    border-radius: 15px;
+    box-shadow: $very_dark_desaturated_blue 1px 1px 20px -10px;
+    background-color: white;
+}
+
+section#imagen{
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+
+    height: 10em;
+    text-align: center;
+    img{
+        margin-top: 6.5em;
+
+        border-radius: 100%;
+        border: solid white 5px;
+    }
+    margin-bottom: 4.5em;
+}
+
+section#encabezado{
+    text-align: center;
+    h1{
+        font-size: 18px;
+    }
+    span{
+        font-weight: normal;
+        color: $dark_grayish_blue;
+    }
+    p{
+        color: $dark_grayish_blue;
+    }
+    margin-bottom: 2em;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5em 0;
+    border-top: dashed $dark_gray 1px; 
+    
+    li{
+        text-align: center;
+        width: 30%;
+    }
+    h1{
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+        color: $dark_gray;
+    }
+}
+
+footer{
+    position: absolute;
+    top: 94vh;
+
+    text-align: center;
+    width: inherit;
+
+    color: darkgreen;
+    font-style: italic;
+
+    a{
+        color: darkgrey;
+        font-weight: bold;
+        font-style: normal;
+    }
+    a:hover{
+        color: black;
+        text-decoration: none;
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,37 @@
+@import "util";
+
+@mixin guia($color, $level) {
+  $opciones: (
+    "1": rem(3px) solid,
+    "2": rem(2px) dashed,
+    "3": rem(1px) solid,
+  );
+  border: $color map-get($opciones, quote($level));
+}
+
+  // body{
+  //   @include guia(blue, 1);
+  //   & > *{
+  //     @include guia(black, 1);
+  //     & > *{
+  //       @include guia(green, 2);
+  //     }
+  //   }
+  // }
+
+// section#head{
+//   @include guia(blue, 3);
+//   & > *{
+//     @include guia(green, 2);
+//   }
+// }
+
+// ul{
+//   @include guia(blue, 1);
+//   li{
+//     @include guia(green, 1);
+//   }
+//   li > *{
+//     @include guia(black, 2);
+//   }
+// }

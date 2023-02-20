@@ -1,0 +1,51 @@
+@mixin movil {
+  @media screen and (max-width: rem(750px)) {
+    @content;
+  }
+}
+
+@function rem($size) {
+  @return $size * 1rem/16px;
+}
+
+@function vw($size) {
+  @return 1366px/100 * $size/1vw * 1rem/16px;
+}
+
+@function vh($size) {
+  @return 766px/100 * $size/1vh * 1rem/16px;
+}
+
+.flex {
+  display: flex;
+  @include movil {
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include movil {
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.flex-row {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.flex-col {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  row-gap: rem(25px);
+  column-gap: rem(25px);
+}

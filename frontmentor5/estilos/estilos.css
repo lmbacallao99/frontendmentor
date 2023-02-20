@@ -1,0 +1,725 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap");
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center, ul#stat li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-col {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.width-all {
+  width: 100%;
+}
+
+.width-col1 {
+  width: 55%;
+}
+
+.width-col2 {
+  width: 35%;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400, 500, 700;
+  background-color: white;
+  background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position-x: -56.25rem, 21.875rem;
+  background-position-y: top, bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+main {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 72.56875rem;
+  min-height: 35.90625rem;
+}
+
+h3 {
+  font-size: 0.9375rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center, ul#stat li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-col {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.width-all {
+  width: 100%;
+}
+
+.width-col1 {
+  width: 55%;
+}
+
+.width-col2 {
+  width: 35%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center, ul#stat li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-col {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.width-all {
+  width: 100%;
+}
+
+.width-col1 {
+  width: 55%;
+}
+
+.width-col2 {
+  width: 35%;
+}
+
+@media screen and (max-width: 46.875rem) {
+  .flex, .flex-center, ul#stat li {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  .width-all {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  .width-col1 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  .width-col2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  div,
+  ul,
+  li {
+    margin: 0.9375rem 0;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  main {
+    width: auto;
+    margin: 0 0.9375rem;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  body {
+    background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position-x: left, right;
+    background-position-y: top, bottom;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  min-width: 100%;
+  color: darkgreen;
+  font-style: italic;
+}
+
+footer a {
+  color: darkgrey;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 46.875rem) {
+  footer {
+    position: static;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center, ul#stat li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-col {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.width-all {
+  width: 100%;
+}
+
+.width-col1 {
+  width: 55%;
+}
+
+.width-col2 {
+  width: 35%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center, ul#stat li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-col {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.width-all {
+  width: 100%;
+}
+
+.width-col1 {
+  width: 55%;
+}
+
+.width-col2 {
+  width: 35%;
+}
+
+@media screen and (max-width: 46.875rem) {
+  .flex, .flex-center, ul#stat li {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  .width-all {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  .width-col1 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  .width-col2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  div,
+  ul,
+  li {
+    margin: 0.9375rem 0;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  main {
+    width: auto;
+    margin: 0 0.9375rem;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  body {
+    background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position-x: left, right;
+    background-position-y: top, bottom;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center, ul#stat li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-col {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.width-all {
+  width: 100%;
+}
+
+.width-col1 {
+  width: 55%;
+}
+
+.width-col2 {
+  width: 35%;
+}
+
+@media screen and (max-width: 46.875rem) {
+  .flex, .flex-center, ul#stat li {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  .width-all {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  .width-col1 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  .width-col2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  div,
+  ul,
+  li {
+    margin: 0.9375rem 0;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  main {
+    width: auto;
+    margin: 0 0.9375rem;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  body {
+    background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position-x: left, right;
+    background-position-y: top, bottom;
+  }
+}
+
+div#text h1 {
+  color: #502050;
+  font-size: 3.25rem;
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+
+@media screen and (max-width: 46.875rem) {
+  div#text h1 {
+    margin-top: 4.375rem;
+    font-size: 2.625rem;
+  }
+}
+
+div#text P {
+  opacity: 0.5;
+}
+
+.star {
+  width: 7.8125rem;
+  height: 1.125rem;
+  background-image: url(/images/icon-star.svg), url(/images/icon-star.svg), url(/images/icon-star.svg), url(/images/icon-star.svg), url(/images/icon-star.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0rem, 1.5625rem, 3.125rem, 4.6875rem, 6.25rem;
+  display: inline-block;
+}
+
+.align-left {
+  -ms-grid-column-align: left;
+      justify-self: left;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.align-center {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.align-right {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.rosa {
+  color: #ee68a4;
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+ul#stat {
+  color: #502050;
+}
+
+ul#stat li {
+  background-color: #f7f2f7;
+  border-radius: 0.625rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 80%;
+  min-height: 25%;
+  margin: 0.625rem 0rem;
+  padding: 0 0.9375rem;
+}
+
+ul#stat li > * {
+  margin: 0.625rem 0.9375rem;
+}
+
+@media screen and (max-width: 46.875rem) {
+  ul#stat li > * {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  ul#stat {
+    width: 100%;
+  }
+  ul#stat li {
+    display: block;
+    width: auto;
+  }
+}
+
+ul#person {
+  color: #f7f2f7;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 19.15rem;
+}
+
+ul#person li {
+  border-radius: 0.625rem;
+  background-color: #502050;
+  padding: 2.5rem 1.875rem;
+  width: 32%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content max-content max-content;
+      grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-rows: max-content max-content max-content;
+  -ms-grid-columns: 5rem auto auto;
+      grid-template-columns: 5rem auto auto;
+}
+
+ul#person li img {
+  border-radius: 100%;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  max-height: 3.125rem;
+}
+
+ul#person li h3 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+ul#person li p {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: span 3;
+      grid-column-start: span 3;
+  margin-top: 1.25rem;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 46.875rem) {
+  ul#person {
+    text-align: initial;
+  }
+  ul#person li {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

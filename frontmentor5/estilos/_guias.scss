@@ -1,0 +1,56 @@
+@import "media";
+
+@mixin guia($color, $level) {
+  $opciones: (
+    "1": rem(3px) solid,
+    "2": rem(2px) dashed,
+    "3": rem(1px) solid,
+  );
+  border: $color map-get($opciones, quote($level));
+}
+
+// body {
+//   @include guia(black, 1);
+// }
+// main,
+// div,
+// ul {
+//   @include guia(blue, 1);
+// }
+// li {
+//   @include guia(green, 2);
+// }
+
+// ul#stat {
+//   @include guia(black, 1);
+//   li {
+//     @include guia(blue, 3);
+//   }
+//   li > * {
+//     @include guia(green, 2);
+//   }
+// }
+
+// ul#person {
+//   @include guia(black, 1);
+//   li {
+//     @include guia(blue, 1);
+//   }
+//   li > * {
+//     @include guia(green, 2);
+//   }
+// }
+
+// @include movil {
+//   body {
+//     @include guia(black, 1);
+//   }
+//   main,
+//   div,
+//   ul {
+//     @include guia(blue, 1);
+//   }
+//   li {
+//     @include guia(green, 2);
+//   }
+// }

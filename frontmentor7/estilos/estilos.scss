@@ -1,0 +1,204 @@
+@import "util";
+@import "reset";
+@import "guias";
+@import "bloques";
+
+// Variables:
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+$Cyan: hsl(179, 62%, 43%);
+$Cyan_transparent: hsla(179, 62%, 43%, 0.692);
+$Bright_Yellow: hsl(71, 73%, 54%);
+$Light_Gray: hsl(204, 43%, 93%);
+$Grayish_Blue: hsl(218, 22%, 67%);
+// _Reset Adicional:
+ul {
+  list-style-type: none;
+  margin: 0rem;
+  padding: 0rem;
+}
+// Estilos Desktop: 1440px-800px
+body {
+  font-family: "Karla", sans-serif;
+  font-size: rem(16px);
+  font-weight: 400;
+  background-color: $Light_Gray;
+  color: $Light_Gray;
+}
+main {
+  section#head {
+    background-color: white;
+    h1 {
+      color: $Cyan;
+      font-size: 1.6rem;
+    }
+    h2 {
+      color: $Bright_Yellow;
+      font-size: 1.2rem;
+    }
+    p {
+      color: $Grayish_Blue;
+      font-size: 1.1rem;
+      // max-width: 95%;
+    }
+  }
+  section#card1 {
+    background-color: $Cyan;
+    h2 {
+      
+    }
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      span {
+        font-size: 1.2rem;
+        font-weight: 400;
+        opacity: 0.5;
+      }
+    }
+    p {
+    }
+    button {
+      text-align: center;
+      color: $Light_Gray;
+      background-color: $Bright_Yellow;
+    }
+  }
+  section#card2 {
+    background-color: $Cyan_transparent;
+    h2 {
+    }
+    ul {
+      li {
+      }
+    }
+  }
+}
+footer {
+  text-align: center;
+  color: darkgreen;
+  a {
+    color: darkgrey;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+      color: black;
+      font-weight: normal;
+      text-decoration: none;
+    }
+  }
+}
+// Propiedades Generales:
+h1,
+h2,
+h3,
+button {
+  font-weight: 700;
+  color: white;
+}
+main {
+  box-shadow: darkgrey 1rem 1rem 3rem -1rem;
+  border-radius: rem(10px);
+}
+button {
+  box-shadow: black 1rem 1rem 3rem -1rem;
+  border: none;
+}
+section {
+}
+section#head {
+  border-radius: rem(10px) rem(10px) 0 0;
+}
+section#card1 {
+  border-radius: 0 0 0 rem(10px);
+}
+section#card2 {
+  border-radius: 0 0 rem(10px) 0;
+}
+h1 {
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+}
+p {
+}
+button {
+  border-radius: rem(5px);
+}
+ul {
+}
+li {
+}
+// Estilos Movil: 375px-npx
+@include movil {
+  body {
+  }
+  main {
+    section#head {
+      h1 {
+        font-size: initial;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 1rem;
+        max-width: fit-content;
+      }
+    }
+    section#card1 {
+      h2 {
+      }
+      h2 {
+        span {
+        }
+      }
+      p {
+      }
+      button {
+      }
+    }
+    section#card2 {
+      h2 {
+      }
+      ul {
+        li {
+        }
+      }
+    }
+  }
+  footer {
+  }
+  // Propiedades Generales:
+  :root {
+    font-size: 14px;
+  }
+  section {
+  }
+  section#head {
+    border-radius: rem(10px) rem(10px) 0 0;
+  }
+  section#card1 {
+    border-radius: unset;
+  }
+  section#card2 {
+    border-radius: 0 0 rem(10px) rem(10px);
+  }
+  h1 {
+  }
+  h2 {
+  font-size: 1.4rem;
+  }
+  h3 {
+  }
+  p {
+  }
+  button {
+  }
+  ul {
+  }
+  li {
+  }
+}

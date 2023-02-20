@@ -1,0 +1,144 @@
+$bright_ORANGE: hsl(31, 77%, 52%);
+$dark_CYAN: hsl(184, 100%, 22%);
+$very_dark_CYAN: hsl(179, 100%, 13%);
+
+$transparent_WHITE: hsla(0, 0%, 100%, 0.75); // paragraphs
+$very_light_GRAY: hsl(0, 0%, 95%); //background, headings, buttons
+
+$font_body: 15px;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap");
+$font_LEXEND_DECA: "Inter", sans-serif;
+$weights_LEXEND_DECA: 400;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap");
+$font_BIG_SHOULDERS_DISPLAY: "Red Hat Display", sans-serif;
+$weights_BIG_SHOULDERS_DISPLAY: 700;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 97vh;
+    width: 99vw;
+
+    font-family: $font_LEXEND_DECA;
+    font-weight: $weights_LEXEND_DECA;
+    font-size: $font_body;
+    color: $very_light_GRAY;
+    background-color: $very_light_GRAY;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-content: space-around;
+    justify-content: space-around;
+
+    width: 70vw;
+
+    position: absolute;
+    top: 12vh;
+    left: 15vw;
+
+    border-radius: 10px;
+}
+
+li {
+    padding: 3.6em;
+
+    img {
+        margin-bottom: 1.2em;
+    }
+    h1 {
+        margin-bottom: 1.2em;
+        text-transform: uppercase;
+    }
+    p {
+        margin-bottom: 3.5em;
+        color: $transparent_WHITE;
+        line-height: 1.7em;
+    }
+    button {
+        font-family: $font_BIG_SHOULDERS_DISPLAY;
+        font-weight: $weights_BIG_SHOULDERS_DISPLAY;
+
+        width: 70%;
+        height: 3.5em;
+
+        border-radius: 30px;
+        border: {
+            color: $very_light_GRAY;
+            style: solid;
+        }
+
+        background-color: $very_light_GRAY;
+    }
+    button:hover{background-color: inherit;}
+}
+#card1 {
+    button{color:$bright_ORANGE;}
+    button:hover{color: $very_light_GRAY;}
+    background-color: $bright_ORANGE;
+    border-radius: 10px 0 0 10px;
+}
+#card2 {
+    button{color:$dark_CYAN;}
+    button:hover{color: $very_light_GRAY;}
+    background-color: $dark_CYAN;
+}
+#card3 {
+    button{color:$very_dark_CYAN;}
+    button:hover{color: $very_light_GRAY;}
+    background-color: $very_dark_CYAN;
+    border-radius: 0 10px 10px 0;
+}
+
+footer {
+    width: 100vw;
+
+    position: relative;
+    top: 90vh;
+    text-align: center;
+
+    color: darkgreen;
+
+    a{
+        color:grey;
+        font-weight: bold;
+    }
+    a:hover{
+        text-decoration: none;
+        font-weight: normal;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    ul {
+        flex-direction: column;
+        width: 80vw;
+
+        position: static;
+        margin: 6vh 6vw;
+    }
+
+    #card1 {
+        border-radius: 10px 10px 0 0;
+    }
+    #card3 {
+        border-radius: 0 0 10px 10px;
+    }
+
+    footer {
+        width: initial;
+        position: static;
+        text-align: center;
+    }
+}
